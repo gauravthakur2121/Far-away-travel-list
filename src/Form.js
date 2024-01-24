@@ -1,9 +1,11 @@
 import { useState } from "react";
 
 
-const Form = () => {
+const Form = ({onAddItems}) => {
   const [description , setDescription] = useState("")
   const [quantity , setQuantity] = useState(1)
+  
+ 
 
 
 
@@ -17,6 +19,8 @@ const Form = () => {
 
     setDescription("")
     setQuantity(1);
+
+onAddItems(newitem)
 
 
 
